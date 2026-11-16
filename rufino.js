@@ -10,7 +10,7 @@ window.RUFINO = {
   // Prévia navegável do modelo Rufino Barber exibida na seção 04.
   // Endereço publicado (versão aperfeiçoada no AI Studio). Para voltar à cópia local, use 'site-demo/index.html'.
   // Se mudar o domínio, atualize também o frame-src em vercel.json.
-  siteDemo: 'https://rufino-barber.vercel.app/',
+  siteDemo: 'https://rufino-barber.vercel.app/?v=2',
   // Usado quando a própria proposta está dentro de outra moldura (ex.: prévia no Claude), onde sites externos são bloqueados.
   siteDemoLocal: null,
 
