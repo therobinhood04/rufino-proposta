@@ -106,7 +106,7 @@ onScroll();
     fl.innerHTML = (prop.logo ? '<img class="logo-cli" src="' + esc(prop.logo) + '" alt="' + esc(prop.nome) + '">' : '') + '<span>' + (prop.proprietario ? 'Olá, ' + esc(prop.proprietario) + ' · ' : '') + 'Proposta para ' + esc(prop.nome) + '</span><span style="color:var(--muted)">' + esc(prop.bairro) + ', ' + esc(prop.cidade) + '</span>';
     const g = prop.google;
     if (g && g.nota) {
-      const d = P.levantamento.split('-').reverse().join('/');
+      const d = (prop.levantamento || P.levantamento).split('-').reverse().join('/');
       $('#rep').innerHTML = '<span class="score num">' + g.nota.toFixed(1).replace('.', ',') + '</span><p>' + esc(prop.nome) + ' tem nota ' + g.nota.toFixed(1).replace('.', ',') + ' no Google, com ' + int(g.avaliacoes) + ' avaliações. A reputação já existe; o próximo passo é uma presença digital à altura dela.<small>Dados públicos do Google Maps consultados em ' + d + '.</small></p>';
     } else $('#rep').remove();
   } else {
